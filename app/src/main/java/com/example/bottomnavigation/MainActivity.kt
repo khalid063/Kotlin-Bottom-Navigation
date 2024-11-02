@@ -20,10 +20,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         // Initialize ImageViews
-        ivHomeBut = findViewById(R.id.searchImageViewIcon)
-        ivChatbut = findViewById(R.id.discassionImageViewIcon)
-        ivCartBut = findViewById(R.id.homeImageViewIcon)
-        ivAccountBut = findViewById(R.id.chatImageViewIcon)
+        ivHomeBut = findViewById(R.id.id_homeImageViewIcon)
+        ivChatbut = findViewById(R.id.id_achievementImageViewIcon)
+        ivCartBut = findViewById(R.id.id_reportsImageViewIcon)
+        ivAccountBut = findViewById(R.id.id_knowledgeImageViewIcon)
 
         // Set click listeners for each button
         ivHomeBut.setOnClickListener(this)
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         // Use when statement to handle clicks
         when (v?.id) {
-            R.id.searchImageViewIcon -> {
+            R.id.id_homeImageViewIcon -> {
                 Toast.makeText(this, "Home button is clicked", Toast.LENGTH_SHORT).show()
 
                 // Change icon colors
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 loadFragment(HomeFragment())
             }
 
-            R.id.discassionImageViewIcon -> {
+            R.id.id_achievementImageViewIcon -> {
                 Toast.makeText(this, "Chat button is clicked", Toast.LENGTH_SHORT).show()
 
                 // Change icon colors
@@ -79,10 +79,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 ivAccountBut.setColorFilter(ContextCompat.getColor(this, R.color.transparent))
 
                 // Load ChatFragment when Chat button is clicked
-                loadFragment(ChatFragment())
+                loadFragment(AchievementFragment())
             }
 
-            R.id.homeImageViewIcon -> {
+            R.id.id_reportsImageViewIcon -> {
                 Toast.makeText(this, "Cart button is clicked", Toast.LENGTH_SHORT).show()
 
                 // Change icon colors
@@ -92,10 +92,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 ivAccountBut.setColorFilter(ContextCompat.getColor(this, R.color.transparent))
 
                 // Load HomeFragment when Cart button is clicked (change this if you want a different fragment)
-                loadFragment(HomeFragment())
+                loadFragment(ReportsFragment())
             }
 
-            R.id.chatImageViewIcon -> {
+            R.id.id_knowledgeImageViewIcon -> {
                 Toast.makeText(this, "Account button is clicked", Toast.LENGTH_SHORT).show()
 
                 // Change icon colors
@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 ivAccountBut.setColorFilter(ContextCompat.getColor(this, R.color.teal_200))
 
                 // Load AccountFragment when Account button is clicked
-                loadFragment(AccountFragment())
+                loadFragment(KnowledgeFragment())
             }
         }
     }

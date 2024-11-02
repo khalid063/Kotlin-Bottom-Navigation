@@ -2,6 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="teal_200">#FF03DAC5</color> <!-- Replace with your desired color code -->
+    <color name="teal_200">#6BE955</color> <!-- Replace with your desired color code -->
     <color name="transparent">#000000</color> <!-- Replace with your desired color code -->
 </resources>

@@ -27,7 +27,6 @@
                 android:src="@drawable/ic_home"
                 android:clickable="true" />
             <TextView
-                android:background="#FFFFFF"
                 android:gravity="center"
                 android:id="@+id/feed_text_butId"
                 android:layout_width="match_parent"
@@ -61,7 +60,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:background="#FFFFFF"
                 android:gravity="center"
                 android:text="Achievement"
                 android:textColor="#000000"
@@ -86,7 +84,6 @@
                 android:src="@drawable/ic_home"
                 android:clickable="true" />
             <TextView
-                android:background="#FFFFFF"
                 android:gravity="center"
                 android:id="@+id/discassion_text_butId"
                 android:layout_width="match_parent"
@@ -115,7 +112,6 @@
                 android:src="@drawable/ic_home"
                 android:clickable="true" />
             <TextView
-                android:background="#FFFFFF"
                 android:gravity="center"
                 android:id="@+id/chat_text_butId"
                 android:layout_width="match_parent"
